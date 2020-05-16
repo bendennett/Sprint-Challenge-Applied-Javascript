@@ -7,3 +7,26 @@
 //
 //  Each tab should look like this:
 //    <div class="tab">topic here</div>
+
+const tabFunction = (tabInfo) => {
+
+    const tab = document.createElement('div')
+
+    tab.textContent = tabInfo
+
+    tab.classList.add('tab')
+
+    return tab
+}
+
+const entryPoint = document.querySelector('.topics')
+
+axios.get("https://lambda-times-backend.herokuapp.com/topics")
+.then(response => {
+    console.log('api response', response.data)
+response.data.topics.forEach((element) => {
+    entryPoint.appendChild(tabFunction(element))
+    })
+})
+
+
