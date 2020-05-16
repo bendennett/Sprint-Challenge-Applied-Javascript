@@ -30,13 +30,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the DOM?
 
+The document object module.  You can update the webpage independent of language through the DOM.
+
 2. What is an event?
+
+Something that occurs in the life of a webpage.  The user could do it, like a click or a drag or it could be part of the rendering of the page.
 
 3. What is an event listener?
 
+A function or command that triggers another function when an event occurs.
+
 4. Why would we convert a NodeList into an Array?
 
+Because NodeList is only array like and so not all the array methods function when you select a nodelist.
+
 5. What is a component?
+
+A function consisting of many elements that iterates over an array so that you don't have to manually input each element of the array.  The output is automatically updated when the arary is updated.
 
 ### Git Set up
 
